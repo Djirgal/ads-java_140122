@@ -1,10 +1,28 @@
 package lesson2.HW;
 
-public class Notebook {
-    protected int priceStep = 50;
-    protected int priceMin = 500;
-    protected int priceMax = 2000;
-    protected int[] MEMORY = {4, 8, 12, 16, 20, 24};
-    protected String[] BRANDS = {"Lenuvo", "Asos", "MacNote", "Eser", "Xamiou"};
+import java.util.Random;
 
+public class Notebook {
+    private int price;
+    private int memory;
+    private String brand;
+
+
+    public Notebook(int price, int memory, String brand) {
+        this.price = price;
+        this.memory = memory;
+        this.brand = brand;
+    }
+
+    public int getPrice() {
+        return price;
+    }
+
+    public int getMemory() {
+        return memory;
+    }
+
+    public String getBrand() {
+        return brand;
+    }
 }
