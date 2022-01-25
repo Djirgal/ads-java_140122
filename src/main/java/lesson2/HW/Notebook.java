@@ -7,6 +7,7 @@ public class Notebook {
     private int memory;
     private String brand;
 
+    public Notebook() {}
 
     public Notebook(int price, int memory, String brand) {
         this.price = price;
